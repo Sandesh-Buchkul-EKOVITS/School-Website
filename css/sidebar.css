@@ -1,0 +1,56 @@
+/* ===== Sidebar Wrapper ===== */
+.sidebar {
+  width: 230px;
+  height: 100vh;
+  background: #ffffff;
+  border-right: 1px solid #e5e7eb;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  padding-top: 80px; /* topbar space */
+}
+
+/* ===== Menu List ===== */
+.sidebar ul {
+  list-style: none;
+  padding: 0 15px;
+  margin: 0;
+}
+
+/* ===== Menu Item ===== */
+.sidebar ul li {
+  margin-bottom: 6px;
+}
+
+/* ===== Links ===== */
+.sidebar ul li a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #374151;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+/* ===== Hover Effect ===== */
+.sidebar ul li a:hover {
+  background: #f1f5ff;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+/* ===== Active Page ===== */
+.sidebar ul li a.active {
+  background: #eaf1ff;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+/* ===== Optional Icon Style (if added later) ===== */
+.sidebar ul li a i {
+  font-size: 18px;
+}
