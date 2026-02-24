@@ -1,0 +1,777 @@
+/* CARD */
+.card{
+    background:#fff;
+    border-radius:14px;
+    padding:22px;
+    box-shadow:0 6px 18px rgba(0,0,0,.06);
+}
+
+/* HEADER */
+.card-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:18px;
+}
+
+.card-header h2{
+    margin:0;
+    font-size:22px;
+}
+
+.card-header p{
+    margin:4px 0 0;
+    color:#6b7280;
+    font-size:14px;
+}
+
+/* ADD BUTTON */
+.add-btn{
+    background:#2563eb;
+    color:white;
+    padding:10px 18px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.2s;
+}
+.add-btn:hover{
+    background:#1d4ed8;
+}
+
+/* SEARCH */
+.search-box{
+    margin-bottom:18px;
+}
+
+.search-box input{
+    width:100%;
+    padding:12px 15px;
+    border-radius:10px;
+    border:1px solid #e5e7eb;
+    font-size:14px;
+    outline:none;
+}
+
+.search-box input:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 0 3px rgba(37,99,235,.15);
+}
+
+/* TABLE */
+.modern-table{
+    width:100%;
+    border-collapse:collapse;
+    font-size:14px;
+}
+
+.modern-table thead{
+    background:#f9fafb;
+    color:#6b7280;
+}
+
+.modern-table th{
+    padding:14px 12px;
+    text-align:left;
+}
+
+.modern-table td{
+    padding:15px 12px;
+    border-top:1px solid #f1f5f9;
+}
+
+.modern-table tbody tr:hover{
+    background:#f9fafb;
+}
+
+/* STATUS BADGE */
+.status{
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:600;
+}
+
+.status.active{
+    background:#dcfce7;
+    color:#166534;
+}
+
+.status.inactive{
+    background:#fee2e2;
+    color:#991b1b;
+}
+
+/* ACTION BUTTONS */
+.actions{
+    display:flex;
+    gap:8px;
+}
+
+.edit-btn{
+    background:#2563eb;
+    color:white;
+    padding:6px 12px;
+    border-radius:6px;
+    text-decoration:none;
+    font-size:13px;
+}
+
+.delete-btn{
+    background:#ef4444;
+    color:white;
+    padding:6px 12px;
+    border-radius:6px;
+    text-decoration:none;
+    font-size:13px;
+}
+
+.edit-btn:hover{ background:#1d4ed8; }
+.delete-btn:hover{ background:#dc2626; }
+
+
+
+
+
+
+
+
+
+
+
+/* SEARCH AREA CONTAINER */
+.search-wrapper{
+    background:#f3f4f6;
+    padding:16px;
+    border-radius:12px;
+    margin-bottom:18px;
+}
+
+/* SEARCH BAR */
+.search-bar{
+    background:#fff;
+    border:1px solid #e5e7eb;
+    border-radius:30px;
+    display:flex;
+    align-items:center;
+    padding:10px 16px;
+    max-width:520px;
+    transition:.2s;
+}
+
+/* ICON */
+.search-icon{
+    font-size:14px;
+    margin-right:10px;
+    color:#9ca3af;
+}
+
+/* INPUT */
+.search-bar input{
+    border:none;
+    outline:none;
+    width:100%;
+    font-size:14px;
+    background:transparent;
+}
+
+/* FOCUS EFFECT */
+.search-bar:focus-within{
+    border-color:#2563eb;
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+}
+
+
+
+
+
+
+
+
+/* ===== MODAL BACKDROP ===== */
+.modal-overlay{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.45);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    z-index:9999;
+}
+
+/* ===== MODAL BOX ===== */
+.modal-box{
+    background:#fff;
+    width:650px;
+    max-width:95%;
+    border-radius:14px;
+    padding:25px 30px;
+    box-shadow:0 25px 60px rgba(0,0,0,0.25);
+    animation: modalFade .25s ease;
+}
+
+/* Header */
+.modal-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.modal-header h2{
+    margin:0;
+    font-size:22px;
+    font-weight:600;
+}
+
+.close-btn{
+    font-size:22px;
+    cursor:pointer;
+    color:#777;
+}
+.close-btn:hover{
+    color:#000;
+}
+
+/* FORM GRID */
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.form-group.full{
+    grid-column:1/3;
+}
+
+.form-group label{
+    font-size:13px;
+    margin-bottom:5px;
+    color:#444;
+    font-weight:500;
+}
+
+.form-group input,
+.form-group select{
+    padding:10px 12px;
+    border-radius:8px;
+    border:1px solid #dcdcdc;
+    font-size:14px;
+    outline:none;
+    transition:.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus{
+    border-color:#2f6fed;
+    box-shadow:0 0 0 2px rgba(47,111,237,.15);
+}
+
+/* ACTION BUTTONS */
+.modal-actions{
+    margin-top:20px;
+    display:flex;
+    justify-content:flex-end;
+    gap:10px;
+}
+
+.btn-cancel{
+    padding:9px 16px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    background:#f3f3f3;
+    cursor:pointer;
+}
+
+.btn-primary{
+    padding:9px 18px;
+    border-radius:8px;
+    border:none;
+    background:#2f6fed;
+    color:#fff;
+    font-weight:500;
+    cursor:pointer;
+}
+.btn-primary:hover{
+    background:#1f56c9;
+}
+
+/* animation */
+@keyframes modalFade{
+    from{transform:translateY(20px); opacity:0;}
+    to{transform:translateY(0); opacity:1;}
+}
+
+
+
+
+
+.modal{
+    display:none;
+    position:fixed;
+    top:0; left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.35);
+    justify-content:center;
+    align-items:center;
+    z-index:999;
+}
+
+.modal-content{
+    background:#fff;
+    padding:25px;
+    border-radius:14px;
+    width:500px;
+    animation:pop .25s ease;
+}
+
+@keyframes pop{
+    from{transform:scale(.7);opacity:0}
+    to{transform:scale(1);opacity:1}
+}
+
+.close-modal{
+    float:right;
+    font-size:22px;
+    cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
+/* ADD BUTTON MODERN */
+.modern-btn{
+    background: linear-gradient(135deg,#3b82f6,#2563eb);
+    color:white;
+    border:none;
+    padding:12px 22px;
+    border-radius:10px;
+    font-weight:600;
+    font-size:14px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    box-shadow:0 6px 14px rgba(37,99,235,0.25);
+    transition:all .25s ease;
+}
+
+.modern-btn span{
+    font-size:18px;
+    font-weight:700;
+}
+
+.modern-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 22px rgba(37,99,235,0.35);
+}
+
+.modern-btn:active{
+    transform:scale(.97);
+}
+
+
+
+
+
+
+
+
+/* SEARCH BAR */
+.search-wrapper{
+    margin:20px 0 25px 0;
+}
+
+.search-wrapper input{
+    width:100%;
+    padding:14px 18px;
+    border-radius:14px;
+    border:1px solid #e5e7eb;
+    font-size:14px;
+    outline:none;
+    background:#f9fafb;
+    transition:all .25s ease;
+    box-shadow:0 2px 6px rgba(0,0,0,0.05);
+}
+
+.search-wrapper input::placeholder{
+    color:#9ca3af;
+}
+
+.search-wrapper input:focus{
+    background:white;
+    border:1px solid #3b82f6;
+    box-shadow:0 0 0 4px rgba(59,130,246,0.15);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* PAGE AREA */
+.teacher-page{
+    padding:25px;
+}
+
+/* CARD */
+.teacher-page .card{
+    background:white;
+    padding:25px;
+    border-radius:16px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.06);
+}
+
+/* HEADER */
+.teacher-page .card-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.teacher-page .card-header h2{
+    margin:0;
+    font-size:22px;
+}
+
+.teacher-page .card-header p{
+    margin:3px 0 0;
+    color:#6b7280;
+    font-size:14px;
+}
+
+/* ADD BUTTON */
+.teacher-page .modern-btn{
+    background:linear-gradient(135deg,#3b82f6,#2563eb) !important;
+    color:#fff !important;
+    border:none !important;
+    padding:12px 20px;
+    border-radius:10px;
+    font-weight:600;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    transition:.25s;
+}
+
+.teacher-page .modern-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 22px rgba(37,99,235,.35);
+}
+
+/* SEARCH */
+.teacher-page .search-wrapper{
+    margin-bottom:20px;
+}
+
+.teacher-page .search-wrapper input{
+    width:100%;
+    padding:14px 18px;
+    border-radius:12px;
+    border:1px solid #e5e7eb;
+    background:#f9fafb;
+    font-size:14px;
+    outline:none;
+    transition:.25s;
+}
+
+.teacher-page .search-wrapper input:focus{
+    background:#fff;
+    border:1px solid #3b82f6;
+    box-shadow:0 0 0 4px rgba(59,130,246,.15);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   TEACHER PAGE FINAL OVERRIDE (highest priority)
+   ===================================================== */
+
+.teacher-page .add-btn,
+.teacher-page #openTeacherModal{
+    background: linear-gradient(135deg,#3b82f6,#2563eb) !important;
+    color:#fff !important;
+    border:none !important;
+    padding:12px 22px !important;
+    border-radius:12px !important;
+    font-weight:600 !important;
+    font-size:14px !important;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    box-shadow:0 6px 14px rgba(37,99,235,.25);
+    transition:.25s;
+}
+
+.teacher-page .add-btn:hover,
+.teacher-page #openTeacherModal:hover{
+    transform:translateY(-2px);
+    box-shadow:0 12px 24px rgba(37,99,235,.35);
+}
+
+/* SEARCH BAR FIX */
+.teacher-page .search-box,
+.teacher-page .search-wrapper{
+    background:transparent !important;
+    padding:0 !important;
+}
+
+.teacher-page input[type="text"]{
+    width:100% !important;
+    padding:14px 18px !important;
+    border-radius:14px !important;
+    border:1px solid #e5e7eb !important;
+    background:#f9fafb !important;
+    font-size:14px !important;
+    outline:none;
+    transition:.25s;
+    box-shadow:0 2px 6px rgba(0,0,0,.05);
+}
+
+.teacher-page input[type="text"]:focus{
+    background:white !important;
+    border:1px solid #3b82f6 !important;
+    box-shadow:0 0 0 4px rgba(59,130,246,.15) !important;
+}
+
+
+
+
+
+
+
+
+
+/* ================= FIX TABLE OUTSIDE CARD ================= */
+
+/* align table with card width */
+.modern-table{
+    width:calc(100% - 50px);
+    margin:0 25px 25px 25px;
+    background:#fff;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,0.06);
+}
+
+/* header row */
+.modern-table thead{
+    background:#f8fafc;
+}
+
+.modern-table th{
+    padding:16px 18px;
+    font-weight:600;
+    color:#64748b;
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:.5px;
+}
+
+/* body rows */
+.modern-table td{
+    padding:18px;
+    border-top:1px solid #f1f5f9;
+    vertical-align:middle;
+}
+
+.modern-table tbody tr{
+    transition:.18s;
+}
+
+.modern-table tbody tr:hover{
+    background:#f9fbff;
+}
+
+/* remove weird left line */
+.modern-table td:first-child,
+.modern-table th:first-child{
+    padding-left:26px;
+}
+
+/* status badge nicer */
+.status{
+    padding:6px 14px;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:600;
+    display:inline-block;
+}
+
+.status.active{
+    background:#dcfce7;
+    color:#166534;
+}
+
+.status.inactive{
+    background:#fee2e2;
+    color:#991b1b;
+}
+
+/* action buttons alignment */
+.actions{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+/* edit */
+.edit-btn{
+    background:#2563eb;
+    color:#fff;
+    padding:8px 14px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    font-size:13px;
+    transition:.2s;
+}
+.edit-btn:hover{
+    background:#1d4ed8;
+}
+
+/* delete */
+.delete-btn{
+    background:#ef4444;
+    color:#fff;
+    padding:8px 14px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    font-size:13px;
+    transition:.2s;
+}
+.delete-btn:hover{
+    background:#dc2626;
+}
+
+/* search spacing fix */
+.teacher-page .card{
+    margin-bottom:0;
+    border-bottom-left-radius:0;
+    border-bottom-right-radius:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* MODAL */
+.modal{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,.35);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:999;
+}
+
+.modal-box{
+  background:#fff;
+  width:500px;
+  border-radius:12px;
+  padding:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,.2);
+  animation:pop .25s ease;
+}
+
+@keyframes pop{
+  from{transform:scale(.8);opacity:0}
+  to{transform:scale(1);opacity:1}
+}
+
+.modal-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:15px;
+}
+
+.closeModal{
+  cursor:pointer;
+  font-size:22px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+.form-group{
+  display:flex;
+  flex-direction:column;
+}
+
+.form-group.full{
+  grid-column:1/3;
+}
+
+input,select{
+  padding:10px;
+  border:1px solid #ddd;
+  border-radius:8px;
+}
+
+.actions{
+  display:flex;
+  justify-content:flex-end;
+  gap:10px;
+  margin-top:18px;
+}
+
+.cancelBtn{
+  background:#eee;
+  border:none;
+  padding:10px 16px;
+  border-radius:8px;
+}
+
+.saveBtn{
+  background:#2563eb;
+  color:white;
+  border:none;
+  padding:10px 16px;
+  border-radius:8px;
+}

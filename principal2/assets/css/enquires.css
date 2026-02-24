@@ -1,0 +1,71 @@
+body{
+    background:#f5f7fb;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.page-header h2{
+    font-size:28px;
+    font-weight:700;
+}
+
+.page-header p{
+    color:#6b7280;
+    margin-bottom:20px;
+}
+
+/* FILTER BAR */
+.filter-bar{
+    display:flex;
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.filter-bar input,
+.filter-bar select{
+    padding:12px 15px;
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    font-size:14px;
+    background:#fff;
+    min-width:220px;
+}
+
+/* CARD */
+.enquiry-card{
+    background:#fff;
+    padding:20px;
+    border-radius:18px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.05);
+    margin-bottom:20px;
+}
+
+.enquiry-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+.enquiry-top h3{
+    margin:0;
+    font-size:18px;
+}
+
+
+/* BADGES */
+.badge{
+    padding:5px 12px;
+    font-size:12px;
+    border-radius:20px;
+    margin-left:10px;
+}
+
+.status-New{ background:#e0ecff; color:#2563eb; }
+.status-Contacted{ background:#fff3cd; color:#d97706; }
+.status-Enrolled{ background:#dcfce7; color:#16a34a; }
+.status-Closed{ background:#fee2e2; color:#dc2626; }
+
+.status-dropdown{
+    padding:8px 12px;
+    border-radius:10px;
+    border:1px solid #d1d5db;
+}
